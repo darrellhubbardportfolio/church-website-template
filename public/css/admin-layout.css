@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main, aside {
+    max-height: calc(100vh - 60px);
+}
+
+main {
+    overflow-y: scroll;
+}
+
+aside {
+    background-color: white;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}

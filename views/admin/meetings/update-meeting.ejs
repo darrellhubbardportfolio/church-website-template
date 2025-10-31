@@ -1,0 +1,49 @@
+<section class="container-fluid col-12 p-5">
+
+    <form action="/meetings/update-one" method="post" class="form d-block border p-5 bg-white shadow-sm col-12" name="createMeetingForm" id="createMeetingForm" enctype="application/x-www-form-urlencoded">
+
+        <!-- title -->
+        <div class="form-group v-layout mb-3">
+            <label class="form-label col-12" for="title">Add Title</label>
+            <input type="text" name="title" class="form-control" required />
+        </div>
+
+        <!-- category -->
+        <div class="form-group v-layout mb-3">
+            <label class="form-label col-12" for="category">category</label>
+            <select name="category" class="form-control" required>
+                <option></option>
+            </select>
+        </div>
+
+        <!-- start date & time -->
+        <div class="form-group v-layout mb-3">
+            <label class="form-label col-12" for="startDateTime">Start Date & Time</label>
+            <input type="datetime-local" name="startDateTime" class="form-control" required />
+        </div>
+
+        <!-- group the hours and durations together -->
+        <div class="container-fluid col-12 row">
+            <!-- hours duration -->
+            <div class="form-group v-layout col-lg-8 col-md-8 col-sm-6">
+                <label class="form-label col-12" for="duration">Add Duration Time</label>
+                <input type="number" name="duration" class="form-control" required />
+            </div>
+            <!-- duration label -->
+            <div class="form-group v-layout col-lg-4 col-md-4 col-sm-6">
+                <label class="form-label col-12" for="duration">Duration</label>
+                <select name="duration" class="form-control" required>
+                    <option></option>
+                    <option value="minutes">minutes</option>
+                    <option value="hours">hours</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- submit the form -->
+        <div class="container-fluid col-12 d-flex align-items-center justify-content-center p-5">
+
+            <button type="submit" class="btn btn-primary m-0 ms-auto">update meeting</button>
+        </div>
+    </form>
+</section>
