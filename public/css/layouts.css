@@ -1,0 +1,11 @@
+.v-layout {
+    flex-direction: column !important;
+}
+.h-layout {
+    flex-direction: row !important;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

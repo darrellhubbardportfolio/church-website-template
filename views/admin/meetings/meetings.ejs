@@ -1,0 +1,30 @@
+<section class="container-fluid col-12 p-5">
+
+    <table class="table table-hover border">
+        <thead>
+            <tr class="text-capitalize" style="letter-spacing: 2px;">
+                <th class="fw-light">title</th>
+                <th class="fw-light">category</th>
+                <th class="fw-light">start</th>
+                <th class="fw-light">duration</th>
+                <th class="fw-light">actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (var j = 0; j < 5; j++) { %>
+            <tr>
+                <td>baking cookies</td>
+                <td>home economics</td>
+                <td>10/31/2025 14:00</td>
+                <td>3 hours</td>
+                <td>
+                    <div class="container-fluid col-12 row">
+                        <i class="bi bi-pencil"></i>
+                        <i class="bi bi-trash"></i>
+                    </div>
+                </td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</section>

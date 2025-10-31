@@ -1,0 +1,23 @@
+{
+  "name": "church-website-template",
+  "version": "1.0.0",
+  "description": "a simple basic church website featuring some administrative features like creating events, meetings, sermons. this version will include podcasts, but no live streaming.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "gitignore": "^0.7.0",
+    "node-watch": "^0.7.4",
+    "nodemon": "^3.1.10",
+    "sqlite3": "^5.1.7"
+  }
+}

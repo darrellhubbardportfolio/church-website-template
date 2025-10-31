@@ -1,0 +1,27 @@
+<section class="container-fluid col-12 p-5">
+
+    <form action="/regiswter" method="post" class="form d-block col-12" name="registerForm" id="registerForm" enctype="application/x-www-form-urlencoded">
+
+        <!-- username -->
+        <div class="form-group v-layout">
+            <label class="form-label col-12" for="username">username</label>
+            <input type="text" name="username" class="form-control" required />
+        </div>
+
+        <!-- password -->
+        <div class="form-group v-layout">
+            <label class="form-label col-12" for="password">password</label>
+            <input type="password" name="password" class="form-control" required />
+        </div>
+
+        <!-- confirm password -->
+        <div class="form-group v-layout">
+            <label class="form-label col-12" for="confirmPasswords">confirm passwords</label>
+            <input type="password" name="confirmPasswords" class="form-control" required />
+        </div>
+
+        <div class="container-fluid col-12">
+            <button type="submit" class="btn btn-primary">register</button>
+        </div>
+    </form>
+</section>
