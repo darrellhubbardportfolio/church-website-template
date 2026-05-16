@@ -6,7 +6,6 @@ const ejs = require("ejs");
 
 // read express static files
 app.use("/public", express.static(path.join(__dirname, "public")));
-app.use("/views", express.static(path.join(__dirname, "views")));
 
 // handles parsing form-data
 app.use(express.urlencoded({ extendend: true }));
