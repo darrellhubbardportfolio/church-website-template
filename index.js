@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const path = require("path");
-const ejs = require("ejs");
 
 // read express static files
 app.use("/public", express.static(path.join(__dirname, "public")));
@@ -10,6 +9,7 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 // handles parsing form-data
 app.use(express.urlencoded({ extendend: true }));
 app.use(express.json());
+
 // setup view engine
 app.set("view engine", "ejs");
 
@@ -29,6 +29,7 @@ app.use("/meetings", MeetingRouter);
 
 
 const port = process.env.PORT;
-app.listen(port, () => {
+app.listen(port, () => 
+{
     console.log("Server is running on port: ", port);
 })
