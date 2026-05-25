@@ -15,15 +15,13 @@ app.set("view engine", "ejs");
 
 // import routes
 const AdminRouter = require("./routes/AdminRouter.js");
+const ApiRouter = require("./routes/ApiRouter.js");
 const HomeRouter = require("./routes/HomeRouter.js");
-const LoginRouter = require("./routes/LoginRouter.js");
 const MeetingRouter = require("./routes/MeetingRouter.js");
-const RegisterRouter = require("./routes/RegisterRouter.js");
 
 // create routers
 app.use("/", HomeRouter);
-app.use("/login", LoginRouter);
-app.use("/register", RegisterRouter);
+app.use("/api", ApiRouter);
 app.use("/admin", AdminRouter);
 app.use("/meetings", MeetingRouter);
 

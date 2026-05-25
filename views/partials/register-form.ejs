@@ -1,0 +1,46 @@
+<form 
+    action="/register"
+    method="post"
+    name="registerForm"
+    class="card col-12"
+    enctype="application/x-www-form-urlencoded"
+    >
+    <div class="card-header col-12 bg-white">
+        Register Form
+    </div>
+
+    <div class="card-body col-12">
+
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" name="username" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" name="password" class="form-control" required />
+        </div>
+        <!-- confirm password -->
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" class="form-control" required />
+        </div>
+    </div>
+    <div class="card-footer container-fluid col-12 d-flex align-items-center justify-content-center bg-white">
+        <button type="submit" class="btn col-12 btn-primary">Register</button>
+    </div>
+</form>
+
+</section>
+<script>
+    // create a script that checks if the password and confirm password fields match
+    const registerForm = document.querySelector("form[name='registerForm']");
+    const passwordField = registerForm.querySelector("input[name='password']");
+    const confirmPasswordField = registerForm.querySelector("input[name='confirmPassword']");
+    registerForm.addEventListener("submit", (event) => {
+        if (passwordField.value !== confirmPasswordField.value) {
+            event.preventDefault();
+            alert("Passwords do not match");
+        }
+    });
+</script>
